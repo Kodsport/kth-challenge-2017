@@ -1,0 +1,5 @@
+INT(0,52,n) NEWLINE
+REPI(i,n)
+  INT(1,13,x[i]) SPACE REGEX("C|D|H|S",y[i]) NEWLINE
+END
+IF(n>0) ASSERT(UNIQUE(x,y)) END

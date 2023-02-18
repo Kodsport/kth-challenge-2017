@@ -1,0 +1,13 @@
+INT(1,10^5,n) SPACE INT(0,10^5,m) SPACE INT(0,n,k) NEWLINE
+REPI(i,m)
+  INT(1,n,a) SPACE INT(1,n,b) NEWLINE
+  ASSERT(a!=b)
+  IF(a<b) SET(c[i]=a) SET(d[i]=b)
+  ELSE    SET(d[i]=a) SET(c[i]=b)
+  END
+END
+IF(m>0) ASSERT(UNIQUE(c,d)) END
+REPI(i,k)
+  INT(1,n,x[i]) SPACE INT(1,1000) NEWLINE
+END
+IF(k>0) ASSERT(UNIQUE(x)) END

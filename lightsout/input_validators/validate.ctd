@@ -1,0 +1,11 @@
+INT(2,20,n) SPACE INT(n-1,n*(n-1)/2,m) SPACE INT(0,100,l) NEWLINE
+REP(m)
+  INT(0,n-1,a) SPACE INT(0,n-1,b) NEWLINE
+  ASSERT(a != b)
+END
+REP(l)
+  INT(0,n-1) SPACE INT(1,n,p)
+  UNSET(lamps)
+  REPI(i, p) SPACE INT(0,n-1,lamps[i]) END NEWLINE
+  ASSERT(UNIQUE(lamps))
+END
